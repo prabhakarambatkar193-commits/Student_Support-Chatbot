@@ -1,0 +1,10 @@
+# Core dependencies — pinned, compatible with Python 3.9+
+streamlit==1.35.0
+google-generativeai==0.8.3
+openai==1.35.0
+
+# httpx 0.27.x required: openai 1.35.0 passes `proxies` which httpx 0.28+ removed
+httpx==0.27.2
+
+# Loads API keys from a local .env file (optional — can use sidebar input instead)
+python-dotenv==1.0.1
